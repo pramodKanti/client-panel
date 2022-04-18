@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-6 mx-auto">
+    <div class="card">
+      <div class="card-body">
+        <h1 class="text-cneter pb-4 pt-3">
+          <span class="text-primary"
+            ><i class="fa fa-lock"></i> Client Panel</span
+          >
+          Register
+        </h1>
+        <form (submit)="onSubmit()" role="form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="email"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="email"
+              name="password"
+              class="form-control"
+              [(ngModel)]="password"
+              required
+            />
+          </div>
+          <input
+            type="submit"
+            value="Register"
+            class="btn btn-primary btn-block"
+          />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
